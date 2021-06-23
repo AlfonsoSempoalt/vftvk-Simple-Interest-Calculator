@@ -4,7 +4,7 @@ function compute()
     let rate = parseFloat(document.getElementById("rate").value);
     let years = document.getElementById("years").value;
     if(p==='' || rate==='' || years.value===''){
-        alert('please add all the values')
+        alert('enter a positive number')
     }else if(parseFloat(p)>0){
         let totalAmount= calculateTax(p,rate,years);
         addResults(p,rate,years,totalAmount);
