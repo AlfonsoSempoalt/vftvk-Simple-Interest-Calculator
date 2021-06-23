@@ -26,8 +26,8 @@ const rateUpdate=()=>{
 const addResults = (p,rate,years,amount)=>{
     let paymentDate= new Date();
     paymentDate.setFullYear((paymentDate.getFullYear()+parseInt(years)),paymentDate.getMonth(),paymentDate.getDay())
-    document.getElementById('results').innerHTML = `<p>if you deposit: ${p}</p>
-    <p>at an interest rate: ${rate}</p>
-    <p>you will receive: ${amount}</p>
-    <p>in the year: ${paymentDate.getFullYear()}</p> `;
+    document.getElementById('results').innerHTML = `<p>if you deposit:<mark>${p}</mark> </p>
+    <p>at an interest rate: <mark>${rate}</mark></p>
+    <p>you will receive: <mark>${amount}</mark></p>
+    <p>in the year: <mark>${paymentDate.getFullYear()}</mark></p> `;
 }
