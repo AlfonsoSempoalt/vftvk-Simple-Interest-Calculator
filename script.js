@@ -9,7 +9,7 @@ function compute()
         let totalAmount= calculateTax(p,rate,years);
         addResults(p,rate,years,totalAmount);
     }else{
-        alert('please add as principal a positive number')
+        alert('enter a positive number')
     }
 }
 
@@ -27,7 +27,7 @@ const addResults = (p,rate,years,amount)=>{
     let paymentDate= new Date();
     paymentDate.setFullYear((paymentDate.getFullYear()+parseInt(years)),paymentDate.getMonth(),paymentDate.getDay())
     document.getElementById('results').innerHTML = `<p>if you deposit:<mark>${p}</mark> </p>
-    <p>at an interest rate: <mark>${rate}</mark></p>
-    <p>you will receive: <mark>${amount}</mark></p>
+    <p>at an interest rate of: <mark>${rate}</mark></p>
+    <p>you will receive an amount of: <mark>${amount}</mark></p>
     <p>in the year: <mark>${paymentDate.getFullYear()}</mark></p> `;
 }
