@@ -1,14 +1,26 @@
 body {
-    background-color:white;
-    font-family: sans-serif;
+  background-color: black;
+  font-family: sans-serif;
 }
-h1{color:gray;}
-
-
-#rateValue{
-    display: inline
+h1 {
+  color: gray;
+  margin-left: 1.5%;
+  padding-top: 3%;
 }
 
- #impuestos{
-     margin-left: 5%;
- }
+#calculator {
+  width: 30%;
+  height: auto;
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 10px;
+  background-color: white;
+}
+#rateValue {
+  display: inline;
+}
+
+#impuestos {
+  margin-left: 5%;
+}
